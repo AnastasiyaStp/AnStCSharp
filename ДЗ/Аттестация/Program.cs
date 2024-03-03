@@ -20,7 +20,6 @@ void che(int m, int n)
     Console.Write($"{m}, ");
 }
 che(m+1,n);
-
 }
 
 
@@ -42,3 +41,26 @@ che(m+1,n);
 }
 
 Console.WriteLine(AkkermanFunc(3,2));
+
+
+
+// Задайте произвольный массив. Выведете его элементы, начиная с конца. Использовать рекурсию, не использовать циклы.
+// [1, 2, 5, 0, 10, 34] => 34 10 0 5 2 1 
+
+
+void print(int [] A, int n) 
+    { 
+      if (n > 0) 
+      { 
+      	Console.Write(A[n] + " "); 
+      	print(A, n - 1); 
+      } 
+      else Console.WriteLine(A[0]); 
+    } 
+void Main()   
+    { 
+      int [] num = {1, 2, 5, 0, 10, 34}; 
+      print(num, num.Length - 1); 
+    }  
+
+Main();
