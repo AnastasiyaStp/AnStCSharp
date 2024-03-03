@@ -20,5 +20,4 @@ void che(int m, int n)
     Console.Write($"{m}, ");
 }
 che(m+1,n);
-
 }
